@@ -38,8 +38,13 @@ typeArgument(false);
 typeArgument(0);
 
 
-// function primeNumber (num) {
-//     if ( num % (num-1) === 0) return "it's not a prime num";
-//     primeNumber(num);
-// }
-// console.log(primeNumber(4));
+function primeNumber (num) {
+    for (let i = 2; i < num ; i++) {
+        if(num % i === 0){
+            return "it's not a prime number"
+        }        
+    }
+
+    return "it's a prime number";
+}
+console.log(primeNumber(2))
